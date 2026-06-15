@@ -1,0 +1,9 @@
+{
+  "rewrites": [
+    { "source": "/api/:path*", "destination": "/api/:path*" }
+  ],
+  "functions": {
+    "api/chat.js": { "maxDuration": 30 },
+    "api/retell-token.js": { "maxDuration": 10 }
+  }
+}
