@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
+import PageLoader from './components/layout/PageLoader.jsx';
 import Header from './components/layout/Header.jsx';
 import Footer from './components/layout/Footer.jsx';
 import ScrollProgressBar from './components/layout/ScrollProgressBar.jsx';
@@ -19,6 +20,7 @@ export default function App() {
 
   return (
     <>
+      <PageLoader />
       <ScrollToHash />
       <ScrollProgressBar />
       <AmbientBackground />
