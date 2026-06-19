@@ -8,7 +8,7 @@
         <div className="discipline-grid" data-reveal-group>
           <article className="discipline-card" data-reveal="up">
             <div className="discipline-media" data-tilt>
-              <img src="https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=600&q=80&fit=crop" alt="Smart Chatbots" />
+              <img src="/assets/service-chatbot.jpg" alt="Smart Chatbots" />
             </div>
             <span className="discipline-index">01</span>
             <h3 className="discipline-title">Smart Chatbots</h3>
@@ -17,7 +17,7 @@
 
           <article className="discipline-card" data-reveal="up">
             <div className="discipline-media" data-tilt>
-              <img src="https://images.unsplash.com/photo-1589254065878-42c9da997008?w=600&q=80&fit=crop" alt="Voice Automation" />
+              <img src="/assets/service-voice.jpg" alt="Voice Automation" />
             </div>
             <span className="discipline-index">02</span>
             <h3 className="discipline-title">Voice Automation</h3>

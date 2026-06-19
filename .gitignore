@@ -7,3 +7,7 @@ dist/
 *.jpg
 *.jpeg
 *.webp
+!public/assets/*.jpg
+!public/assets/*.png
+!public/assets/*.jpeg
+!public/assets/*.webp
