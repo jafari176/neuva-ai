@@ -265,15 +265,15 @@ export default function ServicesPage() {
         </section>
 
         {/* Image Break Section */}
-        <section className="h-[614px] relative overflow-hidden group">
+        <section className="relative overflow-hidden group" style={{ minHeight: 280 }}>
           <div
             className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
-            style={{ backgroundImage: "url('/assets/studio-interior.png')" }}
+            style={{ backgroundImage: "url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200&q=80&fit=crop')" }}
           ></div>
-          <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
-          <div className="absolute inset-0 flex items-center justify-center px-margin-mobile">
+          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent"></div>
+          <div className="absolute inset-0 flex items-center justify-center px-margin-mobile" style={{ padding: '60px 24px' }}>
             <h2 className="font-headline-display-mobile md:font-headline-display text-headline-display-mobile md:text-headline-display text-center leading-none">
-              Automation for <br /> <i className="font-italic-accent text-neon-lime">outcomes.</i>
+              Automation for <br /> <i className="font-italic-accent accent">outcomes.</i>
             </h2>
           </div>
         </section>
@@ -299,7 +299,7 @@ export default function ServicesPage() {
                 <span className="font-label-mono text-on-surface-variant text-xs">Always-On AI</span>
               </div>
               <div>
-                <span className="font-headline-md text-headline-md block">â†—+40%</span>
+                <span className="font-headline-md text-headline-md block">+40%</span>
                 <span className="font-label-mono text-on-surface-variant text-xs">Lead Conversion</span>
               </div>
             </div>

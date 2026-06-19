@@ -1665,7 +1665,6 @@ html, body {
   align-items: center;
   gap: 16px;
   animation: tech-marquee 36s linear infinite;
-  will-change: transform;
 }
 
 .tech-marquee:hover .tech-marquee-track {
