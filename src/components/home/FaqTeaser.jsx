@@ -40,7 +40,9 @@ export default function FaqTeaser() {
                 <span className="faq-chevron">⌄</span>
               </button>
               <div className="faq-answer">
-                <p>{faq.answer}</p>
+                <div className="faq-answer-inner">
+                  <p>{faq.answer}</p>
+                </div>
               </div>
             </div>
           ))}
