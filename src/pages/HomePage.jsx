@@ -6,7 +6,6 @@ import StatsBar from '../components/home/StatsBar.jsx';
 import TechStackSection from '../components/home/TechStackSection.jsx';
 import DisciplinesSection from '../components/home/DisciplinesSection.jsx';
 import ProcessSection from '../components/home/ProcessSection.jsx';
-import ProfileSection from '../components/home/ProfileSection.jsx';
 import ContactSection from '../components/home/ContactSection.jsx';
 import FaqTeaser from '../components/home/FaqTeaser.jsx';
 
@@ -22,7 +21,6 @@ export default function HomePage() {
       <TechStackSection />
       <DisciplinesSection />
       <ProcessSection />
-      <ProfileSection />
       <ContactSection />
       <FaqTeaser />
     </main>
