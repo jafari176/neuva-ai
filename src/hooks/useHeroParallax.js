@@ -7,7 +7,8 @@ export default function useHeroParallax(heroRef, splineInnerRef) {
     const heroSplineInner = splineInnerRef.current;
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-    if (!heroSection || !heroSplineInner || prefersReducedMotion) return undefined;
+    const isMobile = window.matchMedia('(pointer: coarse)').matches;
+    if (!heroSection || !heroSplineInner || prefersReducedMotion || isMobile) return undefined;
 
     let parallaxTicking = false;
 

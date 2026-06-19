@@ -4,18 +4,18 @@ import { Link } from 'react-router-dom';
 const faqs = [
   {
     index: '01',
-    question: 'What does a website at Wibify cost?',
-    answer: "It depends on scope and complexity. A focused marketing site typically starts in the low four figures, while larger projects with custom software or e-commerce scale from there. After a short briefing call we'll send you a transparent, fixed-scope quote.",
+    question: 'What AI services does Neuva offer?',
+    answer: 'We build Smart Chatbots, Voice Automation agents, Lead Generation pipelines, and Sales Recovery systems. Each solution is custom-built for your business and deployed within days.',
   },
   {
     index: '02',
-    question: 'How long does a project take?',
-    answer: 'Most websites take 3–6 weeks from kickoff to launch, depending on the number of pages, content readiness and feedback loops. Larger software or app projects are scoped into milestones with their own timelines.',
+    question: 'How long does implementation take?',
+    answer: 'Most AI systems go live within 7–14 days. A chatbot or voice agent can be deployed in as little as 3 days. Larger multi-channel automations are scoped into milestones with clear timelines.',
   },
   {
     index: '03',
-    question: 'Which technologies do you use?',
-    answer: 'We build on a modern stack — Next.js and React on the frontend, headless CMS for content, and Node-based APIs on the backend. Everything is built performance-first and tested for a perfect Pagespeed score.',
+    question: 'Which platforms do you integrate with?',
+    answer: 'We integrate with HubSpot, Salesforce, GoHighLevel, Pipedrive, Zapier, Make.com, Shopify, WordPress, and most CRMs via API. If you use a custom platform, we build a bespoke integration.',
   },
 ];
 
@@ -28,27 +28,70 @@ export default function FaqTeaser() {
         <p className="eyebrow" data-reveal="up">[FAQ] Frequently asked</p>
         <h2 className="section-title" data-reveal="up">Answers <em className="serif accent">up front</em>.</h2>
 
-        <div className="faq-list" data-reveal-group>
-          {faqs.map((faq, i) => (
-            <div className={`faq-item${openIndex === i ? ' is-open' : ''}`} data-reveal="up" key={faq.index}>
-              <button
-                className="faq-question"
-                aria-expanded={openIndex === i}
-                onClick={() => setOpenIndex(openIndex === i ? null : i)}
-              >
-                <span><span className="faq-index">{faq.index}</span> {faq.question}</span>
-                <span className="faq-chevron">⌄</span>
-              </button>
-              <div className="faq-answer">
-                <div className="faq-answer-inner">
-                  <p>{faq.answer}</p>
+        <div className="faq-list" style={{ marginTop: 40 }}>
+          {faqs.map((faq, i) => {
+            const isOpen = openIndex === i;
+            return (
+              <div key={faq.index} className="faq-item" style={{ borderBottom: '1px solid var(--color-border)' }}>
+                <button
+                  className="faq-question"
+                  aria-expanded={isOpen}
+                  onClick={() => setOpenIndex(isOpen ? null : i)}
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'space-between',
+                    width: '100%',
+                    padding: '24px 0',
+                    background: 'none',
+                    border: 'none',
+                    cursor: 'pointer',
+                    textAlign: 'left',
+                    fontFamily: 'var(--font-display)',
+                    fontSize: '18px',
+                    fontWeight: 300,
+                    color: 'var(--color-ink)',
+                    gap: 16,
+                  }}
+                >
+                  <span style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
+                    <span style={{ fontFamily: 'var(--font-sans)', fontSize: 12, color: 'var(--color-secondary)', letterSpacing: '0.08em', flexShrink: 0 }}>{faq.index}</span>
+                    {faq.question}
+                  </span>
+                  <span style={{
+                    display: 'inline-block',
+                    flexShrink: 0,
+                    fontSize: 18,
+                    transition: 'transform 0.3s ease',
+                    transform: isOpen ? 'rotate(180deg)' : 'rotate(0deg)',
+                    color: 'var(--color-secondary)',
+                  }}>⌄</span>
+                </button>
+
+                <div style={{
+                  overflow: 'hidden',
+                  maxHeight: isOpen ? 300 : 0,
+                  transition: 'max-height 0.35s ease',
+                }}>
+                  <p style={{
+                    fontFamily: 'var(--font-sans)',
+                    fontSize: 15,
+                    lineHeight: 1.7,
+                    color: 'var(--color-on-surface-variant)',
+                    maxWidth: 600,
+                    paddingBottom: 24,
+                  }}>
+                    {faq.answer}
+                  </p>
                 </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
-        <Link to="/faq" className="link-arrow">Read the full FAQ <span className="arrow">→</span></Link>
+        <div style={{ marginTop: 40 }}>
+          <Link to="/faq" className="link-arrow">Read the full FAQ <span className="arrow">→</span></Link>
+        </div>
       </div>
     </section>
   );

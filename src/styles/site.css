@@ -1870,6 +1870,16 @@ html, body {
   transform: none;
 }
 
+/* On mobile/touch: skip all reveal animations — show content immediately */
+@media (pointer: coarse) {
+  [data-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+    will-change: auto !important;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   [data-reveal] {
     transition: none;
