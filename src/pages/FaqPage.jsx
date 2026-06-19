@@ -160,14 +160,14 @@ export default function FaqPage() {
                   <div className="flex-1">
                     <h2 className="font-headline-lg text-headline-lg mb-stack-md group-hover:text-neon-lime transition-colors">Local presence or <span className="font-italic-accent italic">remote?</span></h2>
                     <div className="font-body-lg text-body-lg text-on-surface-variant max-w-3xl">
-                      <p>Our studio is headquartered in <span className="text-primary">Bocholt, NRW</span>, but our projects are borderless. We work across the DACH region and internationally with a refined remote-first workflow.</p>
+                      <p>Our team works <span className="text-primary">fully remote</span> — delivering AI automation projects for clients across the globe with a refined async-first workflow.</p>
                       <div className="relative mt-10 h-64 w-full bg-surface-elevated border border-subtle rounded-xl overflow-hidden grayscale hover:grayscale-0 transition-all duration-500">
                         <div className="absolute inset-0 z-0">
-                          <img className="w-full h-full object-cover" alt="The Wibify studio in Bocholt" src="/assets/studio-interior.png" />
+                          <img className="w-full h-full object-cover" alt="Remote team collaboration" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=900&q=80&fit=crop" />
                         </div>
                         <div className="absolute bottom-6 left-6 z-10 bg-surface-elevated/90 backdrop-blur p-4 border border-subtle rounded-lg">
                           <span className="block font-label-mono text-xs text-ink">LOCATION</span>
-                          <span className="text-primary font-semibold">Bocholt · 51.8336° N · 6.6131° E</span>
+                          <span className="text-primary font-semibold">Remote-first · Global delivery</span>
                         </div>
                       </div>
                     </div>
@@ -182,15 +182,15 @@ export default function FaqPage() {
                   <div className="flex-1">
                     <h2 className="font-headline-lg text-headline-lg mb-stack-md group-hover:text-neon-lime transition-colors">Who <span className="font-italic-accent italic">actually</span> builds the project?</h2>
                     <div className="font-body-lg text-body-lg text-on-surface-variant max-w-3xl">
-                      <p>No handoffs. No junior designers. No offshore black-boxes.</p>
-                      <p className="mt-4"><span className="text-primary font-semibold">Kerim Bilin</span>—founder, developer, and designer—delivers every project personally. To maintain this level of craftsmanship and focus, we only accept a <span className="text-primary underline decoration-ink">maximum of four</span> parallel projects per quarter.</p>
+                      <p>No handoffs. No outsourcing. No black-boxes.</p>
+                      <p className="mt-4">Every AI system is built by our <span className="text-primary font-semibold">in-house specialists</span> — strategy, development, and deployment under one roof. To maintain quality, we only take on a <span className="text-primary underline decoration-ink">maximum of four</span> new projects per quarter.</p>
                       <div className="mt-8 flex items-center gap-6 p-6 bg-surface-elevated border border-subtle rounded-xl">
-                        <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-ink">
-                          <img className="w-full h-full object-cover" alt="Kerim Bilin, founder of Wibify" src="/assets/profile-kerim.png" />
+                        <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-ink flex items-center justify-center bg-[#a7e5d3]">
+                          <span className="material-symbols-outlined text-3xl text-[#0c0a09]">person</span>
                         </div>
                         <div>
-                          <span className="block text-primary font-semibold">Kerim Bilin</span>
-                          <span className="block font-label-mono text-xs text-on-surface-variant">FOUNDER & LEAD PRODUCT DESIGNER</span>
+                          <span className="block text-primary font-semibold">Neuva AI Team</span>
+                          <span className="block font-label-mono text-xs text-on-surface-variant">AI AUTOMATION SPECIALISTS</span>
                         </div>
                       </div>
                     </div>

@@ -8,7 +8,7 @@
         <div className="discipline-grid" data-reveal-group>
           <article className="discipline-card" data-reveal="up">
             <div className="discipline-media" data-tilt>
-              <img src="/assets/service-websites.png" alt="" />
+              <img src="https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=600&q=80&fit=crop" alt="Smart Chatbots" />
             </div>
             <span className="discipline-index">01</span>
             <h3 className="discipline-title">Smart Chatbots</h3>
@@ -17,7 +17,7 @@
 
           <article className="discipline-card" data-reveal="up">
             <div className="discipline-media" data-tilt>
-              <img src="/assets/service-branding.png" alt="" />
+              <img src="https://images.unsplash.com/photo-1589254065878-42c9da997008?w=600&q=80&fit=crop" alt="Voice Automation" />
             </div>
             <span className="discipline-index">02</span>
             <h3 className="discipline-title">Voice Automation</h3>
@@ -26,7 +26,7 @@
 
           <article className="discipline-card" data-reveal="up">
             <div className="discipline-media" data-tilt>
-              <img src="/assets/service-software.png" alt="" />
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80&fit=crop" alt="Lead Generation" />
             </div>
             <span className="discipline-index">03</span>
             <h3 className="discipline-title">Lead Generation</h3>
@@ -35,7 +35,7 @@
 
           <article className="discipline-card" data-reveal="up">
             <div className="discipline-media" data-tilt>
-              <img src="/assets/service-mobile.png" alt="" />
+              <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80&fit=crop" alt="Sales Recovery" />
             </div>
             <span className="discipline-index">04</span>
             <h3 className="discipline-title">Sales Recovery</h3>
