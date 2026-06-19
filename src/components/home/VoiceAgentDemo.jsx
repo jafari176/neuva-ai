@@ -187,9 +187,9 @@ export default function VoiceAgentDemo() {
       <div className="flex flex-col lg:flex-row items-center gap-6">
         {/* Orbital canvas */}
         <div className="relative shrink-0" style={{ width: CANVAS, height: CANVAS }}>
-          {/* Orbit ring */}
+          {/* Orbit ring — hidden on mobile via CSS */}
           <div
-            className="absolute rounded-full orbital-path ambient-rotation pointer-events-none"
+            className="absolute rounded-full orbital-path ambient-rotation pointer-events-none orbital-ring-desktop"
             style={{ width: R * 2, height: R * 2, top: CY - R, left: CX - R }}
           />
 

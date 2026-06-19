@@ -566,6 +566,7 @@ em.serif {
 /* Mobile nav drawer */
 @media (max-width: 1023px) {
   .main-nav {
+    display: flex;
     position: absolute;
     top: 64px;
     left: 0;
@@ -578,6 +579,7 @@ em.serif {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
+    z-index: 999;
   }
 
   .main-nav.is-open {
