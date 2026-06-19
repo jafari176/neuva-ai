@@ -21,7 +21,7 @@ export default function Hero() {
           </p>
           <a href="#contact" className="btn btn-primary" data-reveal="up">Book a Consultation <span className="arrow">→</span></a>
         </div>
-        <div className="hero-spline" data-reveal="scale">
+        <div className="hero-spline hero-spline--desktop" data-reveal="scale">
           <div className="hero-spline-inner" ref={splineInnerRef}>
             <spline-viewer url="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode" loading-anim-type="none"></spline-viewer>
           </div>

@@ -8,7 +8,8 @@ export default function AmbientBackground() {
   useEffect(() => {
     const layer = layerRef.current;
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if (!layer || prefersReducedMotion) return undefined;
+    const isMobile = window.matchMedia('(pointer: coarse)').matches;
+    if (!layer || prefersReducedMotion || isMobile) return undefined;
 
     let ticking = false;
 
